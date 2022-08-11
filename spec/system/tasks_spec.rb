@@ -22,7 +22,7 @@ describe 'タスク管理機能', type: :system do
 
     context 'ユーザーBがログインしているとき' do
       before do
-        # ユーザーBを作成しておく
+        FactoryBot.create(:user, name: 'ユーザーB', email: 'b@example.com')
         # ユーザーBでログインする
       end
 
