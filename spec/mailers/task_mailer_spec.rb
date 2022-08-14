@@ -30,4 +30,6 @@ RSpec.describe TaskMailer, type: :mailer do
       expect(html_body).to match('以下のタスクを作成しました')
       expect(html_body).to match('メイラーSpecを書く')
       expect(html_body).to match('送信したメールの内容を確認します')
+    end
+  end
 end
