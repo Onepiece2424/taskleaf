@@ -24,7 +24,7 @@ class TasksController < ApplicationController
     end
 
     if @task.save
-      TaskMailer.created_email(@task).deliver_now
+      # TaskMailer.created_email(@task).deliver_now
       logger.debug "task: #{@task.attributes.inspect}"
       SampleJob.perform_later
       redirect_to @task, notice: "タスク「#{@task.name}」を登録しました"
