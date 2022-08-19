@@ -8,4 +8,4 @@ document.addEventListener('turbolinks:load', function() {
       e.currentTarget.style.backgroundColor = '';
     });
   });
-};
+});
